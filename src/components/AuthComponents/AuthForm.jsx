@@ -84,6 +84,10 @@ const style = {
   },
 };
 
+const MuiTextField = styled(TextField)(({ theme }) => ({
+  background: theme.palette.inputBackground,
+}));
+
 const AuthForm = ({ title, onSubmit, fields, src, className }) => {
   const [passwordType, setPasswordType] = useState('password');
 
@@ -111,7 +115,7 @@ const AuthForm = ({ title, onSubmit, fields, src, className }) => {
       <List sx={style.list}>
         {fields.map(field => (
           <ListItem key={field.name} sx={style.listItem}>
-            <TextField
+            <MuiTextField
               error={field.errorState}
               variant="outlined"
               label={field.label}

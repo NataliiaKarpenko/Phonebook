@@ -79,7 +79,7 @@ export const ContactsPageComponent = () => {
   };
 
   return (
-    <div>
+    <div >
       <Title variant="h1" sx={style.title}>
         Phonebook
       </Title>

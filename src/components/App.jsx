@@ -30,6 +30,7 @@ export const App = () => {
   };
 
   useEffect(() => {
+    setIsRefreshing(true);
     const persistedTheme = localStorage.getItem('theme');
     if (persistedTheme) {
       setDarkMode(JSON.parse(persistedTheme));
@@ -37,9 +38,10 @@ export const App = () => {
     const refreshUser = async () => {
       const persistedToken = localStorage.getItem('token');
       if (!persistedToken) {
+        setIsRefreshing(false);
         return;
       }
-      setIsRefreshing(true);
+
       try {
         const response = await getUserInfo();
 

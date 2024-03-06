@@ -9,7 +9,9 @@ import { ToastContainer } from 'react-toastify';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <IsLoggedInProvider>
-      <BrowserRouter basename="/Phonebook">
+      <BrowserRouter
+      //
+      >
         <ToastContainer
           position="top-center"
           autoClose={2000}

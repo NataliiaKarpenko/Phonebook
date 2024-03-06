@@ -46,7 +46,7 @@ const style = {
 
 export const HomePageComponent = () => {
   return (
-    <div>
+    <div style={{ marginBottom: '-60px' }}>
       <Title variant="h1" gutterBottom sx={style.title}>
         Phonebook App
       </Title>

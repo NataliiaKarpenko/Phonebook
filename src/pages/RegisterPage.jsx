@@ -3,7 +3,7 @@ import AnimatedPage from './AnimatedPage';
 
 const RegisterPage = () => {
   return (
-    <AnimatedPage style={{ textAlign: 'center' }}>
+    <AnimatedPage style={{ textAlign: 'center', marginBottom: '-60px' }}>
       <RegistrationForm />
     </AnimatedPage>
   );

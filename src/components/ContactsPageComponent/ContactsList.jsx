@@ -29,6 +29,7 @@ export const ContactsList = ({
         );
 
         setContactsList(newContactList);
+        localStorage.removeItem('token');
 
         toast.success(
           `${response.data.name} has been successfully deleted from the contacts`,
