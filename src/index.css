@@ -1,4 +1,9 @@
 @import-normalize; /* bring in normalize.css styles */
+@import 'react-toastify/dist/ReactToastify.css';
+
+:root {
+  --toastify-color-success: #36abc9;
+}
 
 body {
   margin: 0;
@@ -12,4 +17,68 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: color 300ms ease-in-out;
+}
+
+.MuiDrawer-paper {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.homePageImage {
+  display: block;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 80px;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 400px;
+  }
+}
+
+.logoImg {
+  width: 40px;
+
+  @media screen and (min-width: 1440px) {
+    width: 60px;
+  }
+}
+.penRegisterPage {
+  position: absolute;
+  bottom: -5%;
+  left: -5%;
+  width: 100px;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    bottom: -14%;
+    left: -16%;
+  }
+}
+
+.penSigninPage {
+  position: absolute;
+  bottom: -10%;
+  right: -7%;
+  width: 100px;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    bottom: -20%;
+    right: -16%;
+  }
 }
