@@ -30,7 +30,10 @@ const style = {
     ml: 'auto',
     mr: 'auto',
   },
-  card: { width: { md: 900, lg: 1300 }, mb: { xs: 3, md: 0 } },
+  card: {
+    width: { md: 900, lg: 1300 },
+    mb: { xs: 3, md: 0 },
+  },
   description: {
     marginBottom: 2,
     fontWeight: 600,

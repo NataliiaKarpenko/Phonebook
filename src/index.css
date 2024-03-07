@@ -35,35 +35,47 @@ code {
 .homePageImage {
   display: block;
   margin-left: auto;
+  width: 80px;
+}
 
-  @media screen and (max-width: 767px) {
-    width: 80px;
+@media screen and (max-width: 767px) {
+  .homePageImage {
     margin-right: auto;
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .homePageImage {
     width: 200px;
   }
+}
 
-  @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
+  .homePageImage {
     width: 400px;
+    -webkit-width: 400px;
   }
 }
 
 .logoImg {
   width: 40px;
+}
 
-  @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
+  .logoImg {
     width: 60px;
   }
 }
+
 .penRegisterPage {
   position: absolute;
   bottom: -5%;
   left: -5%;
   width: 100px;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .penRegisterPage {
     width: 200px;
     bottom: -14%;
     left: -16%;
@@ -75,8 +87,10 @@ code {
   bottom: -10%;
   right: -7%;
   width: 100px;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .penSigninPage {
     width: 200px;
     bottom: -20%;
     right: -16%;
