@@ -13,11 +13,12 @@ const style = ({ theme, error }) => `
   background: ${
     theme.palette.mode === 'dark' ? theme.grey[800] : theme.grey[50]
   };
+
   border: 1px solid ${
-    theme.palette.mode === 'dark'
-      ? theme.grey[700]
-      : error === 'true'
+    error === 'true'
       ? '#e53935'
+      : theme.palette.mode === 'dark'
+      ? theme.grey[700]
       : theme.grey[300]
   };
   
@@ -29,9 +30,9 @@ const style = ({ theme, error }) => `
     border: 1px solid ${error === 'true' ? '#d32f2f' : theme.blue[400]};
   }
 
-  &:focus {
   
-    outline: 1px solid ${error === 'true' ? '#c62828' : theme.blue[400]};
+  &:focus {
+    outline: none; 
     border-color: ${error === 'true' ? '#c62828' : theme.blue[400]};
     box-shadow: ${
       error === 'false'
