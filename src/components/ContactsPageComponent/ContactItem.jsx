@@ -121,6 +121,7 @@ export const ContactItem = ({
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'start',
+              overflowX: 'hidden',
               fontSize:
                 windowWidth < 768
                   ? '14px'
